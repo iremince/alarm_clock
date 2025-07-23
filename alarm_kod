@@ -41,7 +41,7 @@ def start_alarm():
     def check_alarm():
         if datetime.datetime.now() >= target_time:
             pygame.mixer.init()
-            pygame.mixer.music.load(r"C:\\Users\\Monster\\OneDrive\\Masaüstü\\alarm.wav")
+            pygame.mixer.music.load(r"") # alarm.wav dosyasını masaüstüne veya bu dosyayla aynı klasöre koymanız gerekir.
             pygame.mixer.music.play()
             show_custom_alarm()
         else:
